@@ -9,7 +9,8 @@
     "build": "webpack --bail",
     "watch": "webpack --watch",
     "lint": "eslint .",
-    "tap": "tap test/effects/*.js test/*.js"
+    "tap": "tap test/effects/*.js test/*.js",
+    "make:types": "./node_modules/.bin/tsc"
   },
   "repository": {
     "type": "git",
@@ -27,14 +28,17 @@
     "startaudiocontext": "1.2.1"
   },
   "devDependencies": {
+    "@types/node": "^20.1.7",
     "babel-core": "6.26.3",
     "babel-eslint": "7.2.3",
     "babel-loader": "7.1.5",
     "babel-preset-env": "1.7.0",
+    "dts-bundle": "^0.7.3",
     "eslint": "3.19.0",
     "eslint-config-scratch": "3.1.0",
     "json": "9.0.6",
     "tap": "12.7.0",
+    "typescript": "^5.0.4",
     "web-audio-test-api": "0.5.2",
     "webpack": "4.46.0",
     "webpack-cli": "3.3.12"
